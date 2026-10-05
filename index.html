@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ШЕДЕВР — Магазин мебели в Павлодаре</title>
+<style>
+  :root { --wood:#8b5e3c; --dark:#2b2420; --cream:#faf6f1; --accent:#c8873a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:var(--dark); line-height:1.6; }
+  a { color:inherit; text-decoration:none; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:18px 6%; background:#fff; position:sticky; top:0; box-shadow:0 2px 10px rgba(0,0,0,.07); z-index:10; }
+  .logo { font-size:1.6rem; font-weight:800; color:var(--wood); letter-spacing:2px; }
+  nav a { margin-left:22px; font-weight:500; }
+  nav a:hover { color:var(--accent); }
+  .hero { text-align:center; padding:120px 6%; background:linear-gradient(135deg,#efe3d3,#faf6f1 60%,#e6d5bf); }
+  .hero h1 { font-size:2.9rem; margin-bottom:14px; }
+  .hero p { font-size:1.2rem; max-width:580px; margin:0 auto 28px; }
+  .btn { display:inline-block; background:var(--wood); color:#fff; padding:14px 34px; border-radius:6px; font-weight:600; transition:.2s; }
+  .btn:hover { background:var(--accent); transform:translateY(-2px); }
+  section { padding:70px 6%; }
+  h2 { text-align:center; font-size:2rem; margin-bottom:36px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:24px; max-width:1100px; margin:0 auto; }
+  .card { background:var(--cream); border-radius:12px; padding:28px; text-align:center; box-shadow:0 4px 14px rgba(0,0,0,.06); transition:.2s; }
+  .card:hover { transform:translateY(-4px); }
+  .card .emoji { font-size:3.2rem; }
+  .card h3 { margin:10px 0 6px; }
+  .price { color:var(--wood); font-weight:700; margin-top:8px; }
+  .about { background:var(--cream); text-align:center; }
+  .about p { max-width:680px; margin:0 auto; }
+  .perks { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; max-width:900px; margin:0 auto; text-align:center; }
+  .perks span { font-size:2rem; display:block; }
+  footer { background:var(--dark); color:#ddd; padding:50px 6% 24px; }
+  .fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px; max-width:1100px; margin:0 auto; }
+  footer h4 { color:#fff; margin-bottom:6px; }
+  footer p { font-size:.92rem; margin-bottom:6px; }
+  footer a { color:var(--accent); }
+  .copy { text-align:center; margin-top:34px; font-size:.82rem; color:#999; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ШЕДЕВР</div>
+  <nav>
+    <a href="#catalog">Каталог</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Мебель, в которой хочется жить</h1>
+  <p>Диваны, кровати, шкафы и кухни для вашего дома. Качество, комфорт и доставка по Павлодару.</p>
+  <a class="btn" href="https://wa.me/77476583242">Получить консультацию</a>
+</div>
+
+<section id="catalog">
+  <h2>Каталог</h2>
+  <div class="grid">
+    <div class="card"><div class="emoji">🛋️</div><h3>Диваны</h3><p>Прямые и угловые, на любой вкус</p><div class="price">от 120 000 ₸</div></div>
+    <div class="card"><div class="emoji">🛏️</div><h3>Кровати и матрасы</h3><p>Здоровый и крепкий сон</p><div class="price">от 90 000 ₸</div></div>
+    <div class="card"><div class="emoji">🚪</div><h3>Шкафы и комоды</h3><p>Вместительные системы хранения</p><div class="price">от 70 000 ₸</div></div>
+    <div class="card"><div class="emoji">🍽️</div><h3>Столы и стулья</h3><p>Для кухни и гостиной</p><div class="price">от 45 000 ₸</div></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>О нас</h2>
+  <p>ШЕДЕВР — магазин мебели в Павлодаре. Мы подбираем надёжную мебель для дома и офиса, помогаем с выбором и привозим заказ прямо к вам.</p>
+</section>
+
+<section>
+  <div class="perks">
+    <div><span>🚚</span>Доставка и сборка</div>
+    <div><span>✅</span>Гарантия качества</div>
+    <div><span>💳</span>Удобная оплата</div>
+    <div><span>💬</span>Заказ в WhatsApp</div>
+  </div>
+</section>
+
+<footer id="contacts">
+  <div class="fgrid">
+    <div>
+      <h4>Зарегистрированное название компании</h4>
+      <p>ИП ШЕДЕВР</p>
+      <h4 style="margin-top:14px">Адрес</h4>
+      <p>Улица Торговая, 102<br>Павлодар, обл. Павлодарская 140001<br>Казахстан</p>
+    </div>
+    <div>
+      <h4>Телефон компании</h4>
+      <p><a href="tel:+77476583242">+77476583242</a></p>
+      <h4 style="margin-top:14px">Сайт</h4>
+      <p><a href="https://shedevr.store/">https://shedevr.store/</a></p>
+    </div>
+    <div>
+      <h4>Номер налогоплательщика</h4>
+      <p>920525451215</p>
+    </div>
+  </div>
+  <div class="copy">© 2026 ИП ШЕДЕВР. Все права защищены.</div>
+</footer>
+
+</body>
+</html>
